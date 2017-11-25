@@ -1,0 +1,7 @@
+ComponentID,CompClassName,ExpectedInputParameters,ResponseFields
+PassportValidatorREOW,com.flow.component.PassportValidatorREOW,passportNumber=string#firstname=string#lastname=string#dateOfBirth=string#nationality=string,status=string#expiryDate=string#address=string
+InsertEmployeeDB,com.flow.component.InsertEmployeeDB,passportNumber=string#irstname=string#lastname=string#dateOfBirth=string#nationality=string#displayName=string#address=string#passportValidity=string,status=string#employeeID=string
+UserCreatedPUBSUB,com.flow.component.UserCreatedPUBSUB,employeeID=string,"N/A, ""Fire-n-Forget"""
+RetrieveEmployeeDB,com.flow.component.RetrieveEmployeeDB,employeeID=string,"displayName=string, dataOfBirth=string, passportNumber=string"
+ActivateEmployeeREIN,com.flow.component.ActivateEmployeeREIN,"employeeID=string, dataOfBirth=string",status=string
+OnboardingCAPP,com.flow.component.OnboardingCAPP,"employeeID=string, displayName=string, dataOfBirth=string, passportNumber=string",null

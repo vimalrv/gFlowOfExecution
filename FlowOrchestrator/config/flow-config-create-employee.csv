@@ -1,0 +1,9 @@
+SNo,FlowName,CallType,ComponentID,DataTransformationRules
+1,start,Sync,,
+2,Flow Step 1,Sync,PassportValidatorREOW,
+3,Flow Step 2,Sync,InsertEmployeeDB,"displayName@field=string=firstname#concat#constant=string=, |concat#field=string=lastname$PassportValidity@field=string=expiryDate"
+4,Flow Step 3,ASYNC,UserCreatedPUBSUB,
+5,Flow Step 4,Sync,RetrieveEmployeeDB,
+6,Flow Step 5,ASYNC,ActivateEmployeeREIN,
+7,Flow Step 6,ASYNC,OnboardingCAPP,
+8,end,Sync,,
